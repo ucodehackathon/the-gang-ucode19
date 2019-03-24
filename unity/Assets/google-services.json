@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "229447687903",
+    "firebase_url": "https://ucode2019.firebaseio.com",
+    "project_id": "ucode2019",
+    "storage_bucket": "ucode2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229447687903:android:a207506bfb47f7f5",
+        "android_client_info": {
+          "package_name": "cat.ucode19.registeradidas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229447687903-p3vj049v7c8lnl28jt0cdqh6epc7gbl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOWUMP1Zrvic-QWHWxZqIe8BFCcvGpAmU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
