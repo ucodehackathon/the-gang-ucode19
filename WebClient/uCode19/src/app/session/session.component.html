@@ -1,0 +1,24 @@
+<div style="text-align:center; font-family:Courier; padding-left:5%; padding-right:5%;">
+  <table style="width:100%; height:100%;">
+    <ng-container *ngFor="let k of objectKeys(sessionData);">
+      <th style="font-weight: bold; font-size: 25px; padding-top:50px; width:30%;" class="collection-item">Session {{k}}</th>
+      <tr class=" collection-item " *ngFor="let elem of objectKeys(sessionData[k]);">
+            <td *ngIf="elem != 'players'" class="collection-item" style="font-size:17px;"> {{elem}}:</td>
+            <td *ngIf="elem != 'players'" class="collection-item"> {{sessionData[k][elem]}} </td>
+            
+            <td *ngIf="elem == 'players'" class="collection-item">{{elem}}:</td>
+            <td *ngIf="elem == 'players'" class="collection-item">
+              <ng-container style="width:50%" *ngFor="let key of objectKeys(sessionData[k][elem]); let i = index">
+                <button name="jugar" class="waves-effect btn" (click)="ShowHideButton(i)"> Player {{ key }} </button> 
+                <div id="{{key}}" style="display:none;">
+                  <ng-container *ngFor="let data of objectKeys(sessionData[k][elem][key]);">
+                      <td class="collection-item">{{data}}:</td> 
+                      <td>{{ sessionData[k][elem][key][data] }}</td>
+                  </ng-container>
+                </div>
+              </ng-container>
+            </td>
+          </tr>
+    </ng-container>
+  </table>
+</div>
